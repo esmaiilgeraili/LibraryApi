@@ -24,4 +24,10 @@
     <Folder Include="FileApplication\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="FileApplication\.env">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
