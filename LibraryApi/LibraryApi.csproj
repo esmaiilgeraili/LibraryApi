@@ -20,4 +20,8 @@
     <ProjectReference Include="..\LibraryManagement.Configuration\LibraryManagement.Configuration.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="FileApplication\" />
+  </ItemGroup>
+
 </Project>
