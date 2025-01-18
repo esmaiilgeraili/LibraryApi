@@ -15,28 +15,28 @@ namespace LibraryApi.Controllers
         {
             _bookCategoryApplication = bookCategoryApplication;
         }
-        
+
         [HttpPost(template: "List")]
         public async Task<OperationResultWithData<List<BookCategoryViewModelDTO>>> List()
         {
             return await _bookCategoryApplication.List();
         }
 
-        
+
         [HttpGet(template: "BookCategory")]
         public async Task<OperationResultWithData<BookCategoryViewModelDTO>> BookCategory(Guid bookCategoryId)
         {
             return await _bookCategoryApplication.Get(bookCategoryId);
         }
-                
+
         [HttpPost(template: "Create")]
         public async Task<OperationResult> Create(CreateBookCategoryDTO command)
         {
             return await _bookCategoryApplication.Create(command);
         }
 
-        
-        [HttpPost(template: "Edit")]
+
+        [HttpPut(template: "Edit")]
         public async Task<OperationResult> Edit(EditBookCategoryDTO command)
         {
             return await _bookCategoryApplication.Edit(command);

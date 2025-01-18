@@ -98,8 +98,8 @@ namespace LibraryManagement.Application
 
                 resBookCategory.Caption = command.Caption;
 
-                var resCreate = await _bookCategoryRepository.Edit(resBookCategory, resBookCategory.Id);
-                if (resCreate == null)
+                var resEdit = await _bookCategoryRepository.Edit(resBookCategory, resBookCategory.Id);
+                if (resEdit == null)
                     return operation.Failed(ApplicationMessages.EditError);
 
                 await _bookCategoryRepository.SaveChanges();
