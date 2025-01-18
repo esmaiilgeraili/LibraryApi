@@ -22,7 +22,7 @@ namespace LibraryManagement.ConfigurationService
             //Book
             services.AddScoped<IBookApplication, BookApplication>();
             services.AddScoped<IBookRepository, BookRepository>();
-            //gory
+            //BookCategory
             services.AddScoped<IBookCategoryApplication, BookCategoryApplication>();
             services.AddScoped<IBookCategoryRepository, BookCategoryRepository>();
             #endregion
