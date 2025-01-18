@@ -18,7 +18,7 @@ namespace LibraryManagement.Configuration
 
             var ConnectionStringModel = new ConnectionStringModel()
             {
-                LibraryContextDB = Environment.GetEnvironmentVariable("AR_CONNECTIONSTRINGMODEL_LibraryContextDB"),
+                LibraryContextDB = Environment.GetEnvironmentVariable("LM_CONNECTIONSTRINGMODEL_LibraryContextDB"),
             };
 
             //************************************Result*******************************************

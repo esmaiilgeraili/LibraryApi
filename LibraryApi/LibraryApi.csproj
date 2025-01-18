@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LibraryManagement.ConfigurationService\LibraryManagement.ConfigurationService.csproj" />
     <ProjectReference Include="..\LibraryManagement.Configuration\LibraryManagement.Configuration.csproj" />
   </ItemGroup>
 

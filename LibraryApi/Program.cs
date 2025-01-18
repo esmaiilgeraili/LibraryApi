@@ -1,10 +1,13 @@
 using LibraryManagement.Configuration;
+using LibraryManagement.ConfigurationService;
 
 var builder = WebApplication.CreateBuilder(args);
 
 #region ConfigureServices
 var configuration = ConfigurationHelper.GetConfiguration();
 builder.Services.AddSingleton(configuration);
+
+LibraryManagementBootstrapper.Configure(builder.Services, configuration);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
